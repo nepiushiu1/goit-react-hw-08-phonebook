@@ -55,7 +55,7 @@ export const Register = () => {
         </label>
         <label>
           Password
-          <iInput
+          <input
             type="password"
             name="password"
             value={password}
