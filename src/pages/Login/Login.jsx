@@ -3,13 +3,14 @@ import { useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { logIn } from 'redux/auth/operations';
 
-export const Login = () => {
+const Login = () => {
   const dispatch = useDispatch();
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleChangeLogin = e => {
+    e.preventDefault();
     const value = e.target.value;
     switch (e.target.name) {
       case 'email':
@@ -54,3 +55,4 @@ export const Login = () => {
     </div>
   );
 };
+export default Login;

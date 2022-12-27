@@ -5,14 +5,18 @@ import { selectContacts } from 'redux/contact/selectors';
 import { addContact } from 'redux/contact/operations';
 
 const ContactForm = () => {
-  const dispatch = useDispatch();
   const contacts = useSelector(selectContacts);
+
+  const dispatch = useDispatch();
 
   const handleSubmit = evt => {
     evt.preventDefault();
     const form = evt.target;
     const name = form.elements.name.value;
+    const number = form.elements.number.value;
     const isExist = contacts.find(contact => contact.name === name);
+
+    console.log(name);
 
     if (isExist) {
       alert(`${name} is already in contacts`);
@@ -22,7 +26,7 @@ const ContactForm = () => {
     dispatch(
       addContact({
         name,
-        phone: form.elements.number.value,
+        number,
       })
     );
     form.reset();

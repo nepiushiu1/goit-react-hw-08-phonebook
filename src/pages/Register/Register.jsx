@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 import { register } from 'redux/auth/operations';
 
-export const Register = () => {
+const Register = () => {
   const dispatch = useDispatch();
 
   const [name, setName] = useState('');
@@ -12,6 +12,7 @@ export const Register = () => {
   const [password, setPassword] = useState('');
 
   const handleChange = e => {
+    e.preventDefault();
     const value = e.target.value;
     switch (e.target.name) {
       case 'name':
@@ -67,3 +68,5 @@ export const Register = () => {
     </div>
   );
 };
+
+export default Register;

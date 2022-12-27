@@ -15,7 +15,7 @@ const ContactList = () => {
   const filter = useSelector(selectFilter);
   const dispatch = useDispatch();
 
-  const handleDelete = (id, name) => {
+  const handleDelete = id => {
     dispatch(deleteContact(id));
   };
 
@@ -23,12 +23,12 @@ const ContactList = () => {
 
   return (
     <ol className={css.list}>
-      {filteredContacts.map(({ name, phone, id }) => (
+      {filteredContacts.map(({ name, number, id }) => (
         <li key={id} className={css.link}>
-          {name} : {phone}
+          {name} : {number}
           <button
             type="button"
-            onClick={() => handleDelete(id, name)}
+            onClick={() => handleDelete(id)}
             className={css.btn}
           >
             delete
