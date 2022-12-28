@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgoit_react_hw_08_phonebook=self.webpackChunkgoit_react_hw_08_phonebook||[]).push([[936],{4936:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});n(2791);var o="Home_description__cu+ts",c=n(184),r=function(){return(0,c.jsx)("div",{children:(0,c.jsx)("p",{className:o,children:"Your contacts will be stored here"})})}}}]);
+//# sourceMappingURL=936.dce6c853.chunk.js.map
