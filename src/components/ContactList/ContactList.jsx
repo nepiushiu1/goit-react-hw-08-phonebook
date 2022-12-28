@@ -25,7 +25,9 @@ const ContactList = () => {
     <ol className={css.list}>
       {filteredContacts.map(({ name, number, id }) => (
         <li key={id} className={css.link}>
-          {name} : {number}
+          <p className={css.title}> name</p> <p className={css.name}>{name}</p>{' '}
+          : <p className={css.title}>number</p>
+          <p className={css.name}>{number}</p>
           <button
             type="button"
             onClick={() => handleDelete(id)}

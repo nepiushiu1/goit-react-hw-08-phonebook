@@ -1,0 +1,41 @@
+.conteiner {
+  margin: 30px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 320px;
+}
+.form {
+  margin: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: baseline;
+}
+.name {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.btn {
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  font-weight: 600;
+  color: #fff;
+  background: rgb(109, 147, 235);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.btn:hover,
+.btn:focus {
+  background: rgb(88, 229, 124);
+}
+
+.input_email {
+  margin-left: 45px;
+}
+.input_password {
+  margin-left: 12px;
+}
+.input_username {
+  margin-left: 8px;
+}
